@@ -83,7 +83,7 @@ if (Meteor.isClient) {
         "position": "left",
         "maximum": 100,
         "minimum": 32,
-        "title": "Temp (F)"
+        "title": "Temp (Celsius)"
       }, {
         "id":"v2",
         "axisColor": "#FCD202",
@@ -101,7 +101,7 @@ if (Meteor.isClient) {
         "bullet": "round",
         "bulletBorderThickness": 1,
         "hideBulletsCount": 30,
-        "title": "Temp (F)",
+        "title": "Temp (Celsius)",
         "valueField": "temp",
         "fillAlphas": 0
       }, {
@@ -145,7 +145,7 @@ if (Meteor.isClient) {
     if (chart && tempGaugeChart && humidGaugeChart) {
       chart.validateData(); 
       tempGaugeChart.arrows[0].setValue(point.temp);
-      tempGaugeChart.axes[0].setBottomText(point.temp + ' F');
+      tempGaugeChart.axes[0].setBottomText(point.temp + ' C');
       humidGaugeChart.arrows[0].setValue(point.humidity);
       humidGaugeChart.axes[0].setBottomText(point.humidity + '%');
     };
