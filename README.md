@@ -25,7 +25,7 @@ To get started:
 
 1. In your Terminal, navigate to the 'Tessel' directory.
 2. In enviro.js, change line 8 to the URL where you deployed your Meteor app.
-3. Be sure you have [installed the npm package](http://tessel.github.io/t2-start/modules/climate.html) for the climate module : http://tessel.github.io/t2-start/modules/climate.html .
+3. Be sure you have [installed the npm package](http://tessel.github.io/t2-start/modules/climate.html) with ```$ npm install climate-si7020``` for the climate module : http://tessel.github.io/t2-start/modules/climate.html .
 4. Plug in your climate module and atart up your Tessel.  Make sure it's connected to wifi.
 5. Run enviro.js on your Tessel: ```$ t2 push enviro.js```
 6. You should now see data start appearing in your Meteor app.
